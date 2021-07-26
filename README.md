@@ -13,11 +13,3 @@ This document does not define best practices for any type of documentation.
 
 Composed in <oXygen/> XML Editor 23.0, build 2020121712
 
-Fixes: https://issues.redhat.com/browse/TELCODOCS-213
-
-For: Version 4.9 Webscale Dev Preview
-
-Doc Preview: https://deploy-preview-34819--osdocs.netlify.app/openshift-enterprise/latest/scalability_and_performance/ztp-deploying-disconnected
-
-Signed-off-by: ktothill@redhat.com
-
