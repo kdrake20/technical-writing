@@ -1,7 +1,7 @@
 = ownCloud Server Quick Start Guide
 Katie Tothill <ktothill@gmail.com>
 :description: ownCloud server quick start guide
-:revdate: June 8, 2022
+:revdate: June 9, 2022
 :url-repo: https://github.com/ktothill
 :sectnums:
 :toc:
@@ -13,7 +13,7 @@ Katie Tothill <ktothill@gmail.com>
 Use the subsequent steps for a successful install of ownCloud Server in your on-premises environment.
 
 === System Requirements
-Use the following environment:
+The following minimum requirements must be met in order to install ownCloud Server:
 
 [cols="1,1"]
 [%autowidth]
@@ -270,29 +270,3 @@ $ chown -R www-data. owncloud
 * https://www.php.net/downloads.php[PHP Runtime Downloads]
 
 * https://doc.owncloud.com/server/admin_manual/installation/docker/[Installing ownCloud Server with Docker]
-
-== Configuring ownCloud Server
-Use these steps to configure your server and grant user access.
-
-=== Prerequisites
-*	Your ownCloud URL and Server Credentials from Step 1 of Section 1.2.4.
-
-=== Server Configuration
-See the https://doc.owncloud.com/server/10.10/admin_manual/configuration/[Configuration] section in the ownCloud Administration Guide for server settings applicable to your specific environment.
-
-==== Creating Users
-Grant users access using these steps:
-
-.	Login to your ownCloud server.
-.	Click the Admin dropdown in the right corner.
-.	Select Users to display a list of created users.
-.	Enter the new user`s Login Name and E-Mail Address.
-.	Click the Create button.
-
-[NOTE]
-====
-Login name syntax supports letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.) and at signs (@).
-====
-
-=== Additional Resources
-* https://doc.owncloud.com/server/10.10/admin_manual/configuration/user/user_management.html#managing-groups[ownCloud Group Management]
