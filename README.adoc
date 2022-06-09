@@ -1,4 +1,5 @@
 = introduction
+
 My samples include upstream and downstream technical writing samples formatted in asciidoc.
 
 They are original and were researched using primary sources (e.g.: ownCloud's offical documentation). I wrote the case studies based on my experiences as a Technical Analyst and Customer Success Engineer. 
