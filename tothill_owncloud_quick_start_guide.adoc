@@ -1,16 +1,13 @@
-= ownCloud Quick Start Guide
+= ownCloud Server Quick Start Guide
 Katie Tothill <ktothill@gmail.com>
-:description: ownCloud Server and Client quick start guide
-:revdate: June 7, 2022
+:description: ownCloud server quick start guide
+:revdate: June 8, 2022
 :url-repo: https://github.com/ktothill
 :sectnums:
 :toc:
 :toclevels: 3
 :doctype: book
 :text-align: left
-
-= Introduction
-This document describes how to install and configure your ownCloud server and the ownCloud desktop and mobile clients.
 
 == Installing ownCloud Server
 Use the subsequent steps for a successful install of ownCloud Server in your on-premises environment.
@@ -39,7 +36,7 @@ Table 1.1
 
 [IMPORTANT]
 ====
-* MariaDB 10.6 is only supported with ownCloud release 10.9+. 
+* MariaDB 10.6 is only supported with ownCloud release 10.9+.
 See https://doc.owncloud.com/server/10.10/admin_manual/installation/manual_installation/manual_installation_db.html#mysqlmariadb[Manual Installation Databases] for more information.
 * Some ciphers in version 1.x are no longer valid. You must verify the version regardless of the selected operating system. See https://doc.owncloud.com/server/10.10/admin_manual/installation/manual_installation/manual_installation_prerequisites.html#openssl-version[openSSL Version] for more information.
 ====
@@ -143,7 +140,7 @@ service apache2 reload
 ----
 
 ==== Installing ownCloud
-. Download and set up ownCloud as follows. See https://doc.owncloud.com/server/10.10/admin_manual/configuration/server/occ_command.html[Using the occ Command] for a list of ownCloud Console (`occ`) commands.
+. Download and set up ownCloud. See https://doc.owncloud.com/server/10.10/admin_manual/configuration/server/occ_command.html[Using the occ Command] for a list of ownCloud Console (`occ`) commands.
 +
 [source,terminal]
 ----
@@ -180,7 +177,7 @@ $ occ config:system:set trusted_domains 1 --value="$myip"
 +
 [NOTE]
 ====
-To connect to ownCloud on a given port (e.g.: `8080`), edit `/var/www/owncloud/config/config.php`. 
+To connect to ownCloud on a given port (e.g.: `8080`), edit `/var/www/owncloud/config/config.php`.
 Users can then append the port number to the URL as `\http://<your_owncloud_ip_address>:8080`.
 
 To use a host name in addition to an IP address, configure DNS for your ownCloud server domain and update the trusted domains to include this host name.
@@ -275,13 +272,13 @@ $ chown -R www-data. owncloud
 * https://doc.owncloud.com/server/admin_manual/installation/docker/[Installing ownCloud Server with Docker]
 
 == Configuring ownCloud Server
-Use these steps to configure your server and grant user access. 
+Use these steps to configure your server and grant user access.
 
 === Prerequisites
 *	Your ownCloud URL and Server Credentials from Step 1 of Section 1.2.4.
 
 === Server Configuration
-See the https://doc.owncloud.com/server/10.10/admin_manual/configuration/[Configuration] section in the ownCloud Administration Guide for server settings applicable to your specific environment. 
+See the https://doc.owncloud.com/server/10.10/admin_manual/configuration/[Configuration] section in the ownCloud Administration Guide for server settings applicable to your specific environment.
 
 ==== Creating Users
 Grant users access using these steps:
@@ -299,74 +296,3 @@ Login name syntax supports letters (a-z, A-Z), numbers (0-9), dashes (-), unders
 
 === Additional Resources
 * https://doc.owncloud.com/server/10.10/admin_manual/configuration/user/user_management.html#managing-groups[ownCloud Group Management]
-
-== User Guide: Installing the ownCloud Client
-Use the ownCloud client to automatically synchronize your desired files between a local machine, Android app, or iOS app.
-
-=== Prerequisites
-*	Your ownCloud URL and Server Credentials provided by your ownCloud Administrator.
-
-=== Desktop Client
-Use the ownCloud desktop client to automatically synchronize desired files on your computer with the ownCloud server.
-
-==== System Requirements
-The ownCloud client supports these operating systems:
-
-[cols="1,1"]
-[%autowidth]
-|===
-|operating system|options
-
-|Windows 7+	
-|Native WinVFS available for Windows 10 version 1709+.
-|macOS 10.12+	
-|M1 native support planned for Q4 2022. Unsupported legacy builds for 10.10 and 10.11 available; 64-bit only.
-|CentOS 7.6+
-|
-|Debian 10.0+
-|
-|Fedora 34+
-|
-|Ubuntu 20.04+
-|
-|openSUSE Leap 15.2+
-|
-|===
-Table 3.1
-
-==== Installing the Desktop Client
-Download the latest client for your operating system from the Download Desktop App page.
-
-* For Windows and macOS, open the installation file and follow the ownCloud Setup Wizard.
-* For Linux, use the applicable installation guide for your distribution.
-
-=== Android App
-The ownCloud Android app enables you to access files on the go from an Android-based smartphone or tablet.
-
-==== System Requirements
-* Android 5.0+
-
-==== Installing the Android App
-.	Visit the https://play.google.com/store/apps/details?id=com.owncloud.android[Google Play Store] to download ownCloud.
-.	Open the app and click Add Account.
-.	Enter your ownCloud URL
-.	Sign in with your credentials.
-
-=== iOS App
-The ownCloud iOS app enables you to access files on the go from an iPhone or iPad.
-
-==== System Requirements
-* iOS 11+
-
-==== Installing the iOS App
-.	Visit the https://apps.apple.com/us/app/owncloud-file-sync-and-share/id1359583808[App Store] on your iPhone or iPad to download ownCloud.
-.	Open the app and click Add Account.
-.	Enter your ownCloud URL
-.	Sign in with your credentials.
-
-=== Additional Resources
-* https://doc.owncloud.com/desktop/installing.html#customizing-the-windows-installation[Customizing Windows Desktop Sync Installation]
-
-* https://doc.owncloud.com/android/2.20/faq.html[Android App FAQ]
-
-* https://doc.owncloud.com/ios-app/11.10/faq.html[iOS App FAQ]
