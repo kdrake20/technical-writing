@@ -1,7 +1,7 @@
 = README
 Katie Tothill <ktothill@gmail.com>
-:description: ownCloud server quick start guide
-:revdate: June 8, 2022
+:description: README
+:revdate: June 9, 2022
 :url-repo: https://github.com/ktothill
 :sectnums!:
 :toc:
