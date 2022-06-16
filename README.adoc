@@ -18,7 +18,7 @@ The ownCloud code was sourced directly from their official documentation, but I 
 The samples were written using the IBM Style Guide and the Red Hat Supplementary Style Guide. No one else edited the content. These documents are separate from my current work product and are not part of a larger documentation set.
 
 == ownCloud Server Quick Start Guide
-Downstream samples instruct users to install and configure an ownCloud server and the ownCloud desktop client.
+Downstream samples instruct users to install and configure an ownCloud server.
 
 == Technical Writing Samples
 Upstream samples are intended for Domain Name System (DNS) engineers and support analysts. Downstream samples are intended for users that have DNS service with the fictional company, “OurDNS”.
