@@ -17,6 +17,9 @@ The ownCloud code was sourced directly from their official documentation, but I 
 
 The samples were written using the IBM Style Guide and the Red Hat Supplementary Style Guide. No one else edited the content. These documents are separate from my current work product and are not part of a larger documentation set.
 
+== Identity-Aware Proxy Blog Post
+A blog writing exercise where I described what Google's Identity-Aware Proxy is and how it works.
+
 == ownCloud Server Quick Start Guide
 Downstream samples instruct users to install and configure an ownCloud server.
 
